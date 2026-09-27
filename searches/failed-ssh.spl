@@ -1,0 +1,3 @@
+index=soc_lab sourcetype=linux_secure ("Failed password" OR "Invalid user")
+| stats count by host
+| where count >= 5

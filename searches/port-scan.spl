@@ -1,0 +1,3 @@
+index=soc_lab sourcetype=portscan_test "10.10.10.2"
+| stats count
+| where count >= 20
